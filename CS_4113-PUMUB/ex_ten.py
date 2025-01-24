@@ -24,7 +24,7 @@ Gaussian = img_shift*H
 invert_shifted = np.fft.ifftshift(Gaussian)
 low_pass_filter = np.fft.ifft2(invert_shifted)
 
-#Low Pass Filter
+#High Pass Filter
 Gaussian = img_shift*high_pass
 invert_shifted = np.fft.ifftshift(Gaussian)
 high_pass_filter = np.fft.ifft2(invert_shifted)
